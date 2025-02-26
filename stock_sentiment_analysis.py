@@ -40,9 +40,9 @@ def analyze_sentiment(ticker, keyword):
     else:
         final_score = 0
 
-    if final_score > 0.1:
+    if final_score > 0.2:
         overall_sentiment = "Positive"
-    elif final_score < -0.1:
+    elif final_score < -0.2:
         overall_sentiment = "Negative"
     else:
         overall_sentiment = "Neutral"
